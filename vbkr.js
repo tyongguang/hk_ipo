@@ -7,19 +7,22 @@ function getElementByXpath(path) {
 function sleep(time) {
      return new Promise((resolve) => setTimeout(resolve, time));
 }
+
+login_pw_node = '//*[@id="tradeLoginDialog"]/div/ul/li[2]/input';
 subscription_node = '//*[@id="iposVue"]/div[2]/div[2]/div[2]/div[1]/ul[1]/li[2]/span[2]/a[2]';
 select_node = '//*[@id="iposVue"]/div[2]/div[2]/div[2]/div[1]/ul[1]/li[3]/span[2]/div/div';
 buy_node = '//*[@id="iposVue"]/div[2]/div[2]/div[2]/a';
+is_ok_node = '//*[@id="iposVue"]/div[1]/div[2]/div[2]/table/tbody/tr[2]/td[2]/a'
 
 function main() {
-     first_login_ele = getElementByXpath(login_pw);
+     first_login_ele = getElementByXpath(login_pw_node);
      if (first_login_ele != null) {
           console.log("need password");
           return;
      }
 
-     ok_ele = getElementByXpath(is_ok);
-     if (ok_ele != null) {
+     ok_ele = getElementByXpath(is_ok_node);
+     if (ok_ele != null && ok_ele.text == '撤回') {
           console.log("打新已经完成！");
           return;
      }
