@@ -12,7 +12,7 @@ login_pw_node = '//*[@id="tradeLoginDialog"]/div/ul/li[2]/input';
 subscription_node = '//*[@id="iposVue"]/div[2]/div[2]/div[2]/div[1]/ul[1]/li[2]/span[2]/a[2]';
 select_node = '//*[@id="iposVue"]/div[2]/div[2]/div[2]/div[1]/ul[1]/li[3]/span[2]/div/div';
 buy_node = '//*[@id="iposVue"]/div[2]/div[2]/div[2]/a';
-is_ok_node = '//*[@id="iposVue"]/div[1]/div[2]/div[2]/table/tbody/tr[2]/td[2]/a'
+is_ok_node = '//*[@id="iposVue"]/div[1]/div[2]/div[2]/table/tbody/tr[2]/td[2]/a';
 
 function main() {
      first_login_ele = getElementByXpath(login_pw_node);
