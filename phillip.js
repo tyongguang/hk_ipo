@@ -55,6 +55,7 @@ function main() {
                console.log("click.....");
                console.log(comfirm_ele);
                comfirm_ele.click();
+               return true;
           }
      );
 
