@@ -25,7 +25,7 @@ function main() {
                     if (margin == 30) {
                          if (OrderSide.options[i].text == '95% 孖展') {
                               target_index = i;
-                              break
+                              break;
                          }
                          if (OrderSide.options[i].text == '90% 孖展') {
                               target_index = i;

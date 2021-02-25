@@ -71,7 +71,7 @@
 
    > `Ctrl`键进新网页，这一步很关键！！！
 
-   ![](images\scripty_phillip_page.png)
+   ![](images/scripty_phillip_page.png)
 
 接着就是Next...
 
